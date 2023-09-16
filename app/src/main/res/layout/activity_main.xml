@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Text1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Answer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="32dp"
+        android:text="Answer"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/letsee1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/Inputbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="456dp"
+        android:ems="10"
+        android:hint="Enter Word"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Enterbtn"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Answer1"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <Button
+        android:id="@+id/Enterbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="38dp"
+        android:hint="The Word is.."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Guess1"
+        app:layout_constraintEnd_toStartOf="@+id/SecretWord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/SecretWord"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="44dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Answer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Guess1"
+        android:layout_width="134dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="30dp"
+        android:text="Guess #1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/GuessChek1"
+        app:layout_constraintEnd_toStartOf="@+id/Answer1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/GuessChek1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="60dp"
+        android:text="Guess check #1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Guess2"
+        app:layout_constraintEnd_toStartOf="@+id/letsee1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/letsee1"
+        android:layout_width="71dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="60dp"
+        android:text="Let see"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Answer2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Guess2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="23dp"
+        android:text="Guess #2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/GuessChek2"
+        app:layout_constraintEnd_toStartOf="@+id/Answer2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="23dp"
+        android:text="Answer2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/letsee2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/GuessChek2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="79dp"
+        android:text="Guess check #2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Guess3"
+        app:layout_constraintEnd_toStartOf="@+id/letsee2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/letsee2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="79dp"
+        android:text="Let see 2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Answer3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Guess3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="24dp"
+        android:text="Guess #3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/GuessChek3"
+        app:layout_constraintEnd_toStartOf="@+id/Answer3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Answer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="24dp"
+        android:text="Answer3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/letsee3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/GuessChek3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="106dp"
+        android:text="Guess Check #3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Inputbox"
+        app:layout_constraintEnd_toStartOf="@+id/letsee3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/letsee3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="105dp"
+        android:text="Lets see 3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Enterbtn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="38dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Enterbtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
